@@ -44,22 +44,20 @@ void loop() {
 
     //TV
     irsend.sendNEC(0x02fd58a7, 32); //東芝REGZA VOLUME UP 58a7 
-    delay(70);
-    /*
+    delay(100);
     irsend.sendNEC(0xA8576897, 32); //FUJITSU A8576897 
-    delay(70);
+    delay(100);
     irsend.sendNEC(0x0AF548B7, 32); //HITACHI 0AF548B7
-    delay(70);
+    delay(100);
     irsend.sendNEC(0x18E740BF, 32); //NEC     18E740BF
-    delay(70);
+    delay(100);
     irsend.sendPanasonic(0x4004, 0x01000405); //Panasonic 400401000405
-    delay(70);
+    delay(100);
     irsend.sendPanasonic(0x555A, 0xF148288F); //SHARP     555AF148288F
-    delay(70);
+    delay(100);
     irsend.sendSony(0x555AF1484900B6FF, 64); //SONY     555AF1484900B6FF
-    delay(70);
-    */
-    irsend.sendPanasonic(0x4004, 0x0D00818C); //Panasonic DIGA Back 40040D00818C
+    delay(100);
+    //irsend.sendPanasonic(0x4004, 0x0D00818C); //Panasonic DIGA Back 40040D00818C
     
     while(digitalRead(M5_BUTTON_RST) == LOW);
 
@@ -73,22 +71,20 @@ void loop() {
 
     //TV
     irsend.sendNEC(0x02fd7887, 32); //東芝REGZA VOL DOWN 7887
-    delay(70);
-    /*
+    delay(100);
     irsend.sendNEC(0xA857E817, 32); //FUJITSU A857E817
-    delay(70);
+    delay(100);
     irsend.sendNEC(0x0AF5A857, 32); //HITACHI 0AF5A857
-    delay(70);
+    delay(100);
     irsend.sendNEC(0x18E740BF, 32); //NEC     18E7C03F
-    delay(70);
+    delay(100);
     irsend.sendPanasonic(0x4004, 0x01008485); //Panasonic 400401008485
-    delay(70);
+    delay(100);
     irsend.sendPanasonic(0x555A, 0xF148A887); //SHARP     555AF148A887
-    delay(70);
+    delay(100);
     irsend.sendSony(0x555AF148C90036FF, 64); //SONY     555AF148C90036FF
-    delay(70);
-    */
-    irsend.sendPanasonic(0x4004, 0x0D00FAF7); //Panasonic DIGA display 40040D00FAF7
+    delay(100);
+    //irsend.sendPanasonic(0x4004, 0x0D00FAF7); //Panasonic DIGA display 40040D00FAF7
 
     while(digitalRead(M5_BUTTON_HOME) == LOW);
     digitalWrite(M5_LED, HIGH);  //LED OFF
